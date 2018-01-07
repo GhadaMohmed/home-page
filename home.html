@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Home Page</title>
+		
+		<link rel="stylesheet" href="style.css">
+    </head>
+</html>
+
+<body>
+
+	<center>
+		<div class="logo-holder">
+            <p class="logo">
+                <span>S </span>
+                <span>h </span>
+                <span>o </span>
+                <span>o </span>
+                <span>t </span>
+                <span>e </span>
+                <span>r </span>
+            </p>
+            <a class="play-button" href="#" onclick="game.start()">Play</a>
+            <h4 class="hint"><span>Hint:</span> Shoot devils and avoid angels</h4>
+        </div> 
+	</center>  
+	<div class="imgs">
+	<div class="story">
+		<img src="storyBook.gif" style=" position:fixed; left:12%; bottom: 5%; width:13%; height:28%" />
+	</div>
+		<div class="angelGirl">
+		<img src="angelGirl.png" style=" position:fixed; left:5%; bottom: 50%; width:13%; height:32%" />
+	</div>
+	</div>
+		<div class="angelMan">
+		<img src="angelMan.png" style=" position:fixed; right:15%; bottom: 5%; width:13%; height:30%" />
+	</div>
+	</div>
+		<div class="devilGirl">
+		<img src="devilGirl.png" style=" position:fixed; right:5%; bottom: 50%; width:10%; height:32%" />
+	</div>
+	<div class="devilMan">
+		<img src="devilMan.png" style=" position:fixed; left:44%; bottom: 5%; width:10%; height:30%" />
+	</div>
+	</div>			
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+    <script>
+        $('.logo span').hide().appendTo('.logo').each(function (i) {
+        $(this).delay(350 * i).fadeIn();
+        });
+<!-- 		---------------- animation ------------------ -->
+		$(document).ready(function(){
+			$(".imgs").click(function(){
+				$("div").animate({
+					height: 'toggle'
+				});
+			});
+		});
+	</script>
+
+</body>

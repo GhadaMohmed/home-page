@@ -1,0 +1,63 @@
+ body{
+   background:url(homeBg.PNG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.logo-holder {
+  width: 513px;
+  height: 162px;
+  background-color: #4C4660;
+  border: 4px solid #e60000;
+  border-radius: 68px;
+  text-align: center;
+  margin-top: 10%;
+}
+.logo-holder .logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 100px;
+  letter-spacing: -0.1em;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.logo-holder .logo span {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.logo-holder .play-button {
+  display: inline-block;
+  background-color: #b30000;
+  border: 4px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  width: 200px;
+  height: 56px;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 56px;
+  text-decoration: none;
+}
+.logo-holder .play-button:hover {
+  background-color: #cc0000;
+}
+.logo-holder .hint {
+  color: #fff;
+  font-size: 20px;
+}
+.logo-holder .hint span {
+  color: #FF4571;
+}
+	@media (max-width: 576px) { 
+                .logo-holder .play-button
+                {
+                    left: 25%;
+                }
+            } 
+ 
